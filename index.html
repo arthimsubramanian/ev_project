@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>California Registration Total</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>California Vehicle Sales by Type (2011 - 2022)</h1>
+    <h2>This chart is based off of California's "Vehicle Population" csv file which indicates that "Vehicle population is updated annually, each April, to reflect the number of vehicles “on the road” during the previous calendar year. 
+        Vehicle population counts vehicles whose registration is either current or less than 35 days expired. 
+        Sales are higher than population because of vehicle retirements, accidents, owners moving out of state, or other reasons". The negative sales figures can also
+        be attributed to the way in which the state of California collected this data.</h2>
+    <div id="plot" style="width: 800px; height: 600px;"></div>
+
+    <select id="selDataset">
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+      </select>    
+
+    <script src="updated_cal_javascript.js"></script>
+    <script src="plots.js"></script>
+</body>
+</html>
